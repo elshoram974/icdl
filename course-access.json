@@ -1,0 +1,23 @@
+{
+  "course": "Computer Skills & Microsoft Office — MRECode",
+  "updatedAt": "2026-10-20",
+  "openLessons": [1,2],
+  "lessonFiles": {
+    "01": "MRECode_Student_Lesson_01_ICDL_Introduction_Computers_Devices.html",
+    "02": "MRECode_Student_Lesson_02_Windows_Applications_Files_Storage.html",
+    "03": "MRECode_Student_Lesson_03_Networks_Web_Search_Online_Information.html",
+    "04": "MRECode_Student_Lesson_04_Email_Online_Communication_Calendar_Cloud.html",
+    "05": "MRECode_Student_Lesson_05_Word_Basics_Document_Creation_Editing.html",
+    "06": "MRECode_Student_Lesson_06_Word_Paragraphs_Lists_Styles_Page_Layout.html",
+    "07": "MRECode_Student_Lesson_07_Word_Tables_Images_Mail_Merge_Output.html",
+    "08": "MRECode_Student_Lesson_08_Word_Integrated_Project_Documents_Review.html",
+    "09": "MRECode_Student_Lesson_09_Excel_Cells_Data_Worksheets_Formatting.html",
+    "10": "MRECode_Student_Lesson_10_Excel_Formulas_Functions_References.html",
+    "11": "MRECode_Student_Lesson_11_Excel_IF_COUNTIF_SUMIF_Sort_Filter.html",
+    "12": "MRECode_Student_Lesson_12_Excel_Charts_Output_Integrated_Project.html",
+    "13": "MRECode_Student_Lesson_13_PowerPoint_Slides_Structure_Visual_Design.html",
+    "14": "MRECode_Student_Lesson_14_PowerPoint_Objects_Charts_Effects_Delivery.html",
+    "15": "MRECode_Student_Lesson_15_Cyber_Security_Safe_Web_Data_Protection.html",
+    "16": "MRECode_Student_Lesson_16_AI_Essentials_Responsible_Generative_AI.html"
+  }
+}
