@@ -5,7 +5,7 @@
   const lessonPattern = /MRECode_Student_Lesson_(\d{2})_[^/]+\.html$/;
   // Browsers block fetch() for file:// URLs. Keep this in sync with the
   // default published list so opening index.html directly still works.
-  const localPreviewConfig = Object.freeze({ openLessons: [0, 1] });
+  const localPreviewConfig = Object.freeze({ openLessons: [1, 2] });
 
   document.documentElement.classList.add('access-checking');
 
@@ -53,6 +53,37 @@
     });
   }
 
+  function updateLessonNavigation(currentLesson, openLessons, lessonFiles) {
+    const navigation = document.querySelector('.mobile-nav');
+    if (!navigation) return;
+
+    const lessons = [...openLessons].sort((first, second) => first - second);
+    const currentIndex = lessons.indexOf(currentLesson);
+    const previousLesson = lessons[currentIndex - 1];
+    const nextLesson = lessons[currentIndex + 1];
+    const previousLink = navigation.querySelector('a:not(.primary)');
+    const nextLink = navigation.querySelector('a.primary');
+    const position = navigation.querySelector('span');
+
+    if (previousLesson) {
+      previousLink.href = lessonFiles[String(previousLesson).padStart(2, '0')];
+      previousLink.textContent = 'الدرس السابق';
+    } else {
+      previousLink.href = 'index.html';
+      previousLink.textContent = 'قائمة الدروس';
+    }
+
+    if (nextLesson) {
+      nextLink.href = lessonFiles[String(nextLesson).padStart(2, '0')];
+      nextLink.textContent = 'الدرس التالي';
+    } else {
+      nextLink.href = 'index.html';
+      nextLink.textContent = 'قائمة الدروس';
+    }
+
+    if (position) position.textContent = `${currentIndex + 1} / ${lessons.length}`;
+  }
+
   async function applyAccessRules() {
     addStyles();
     try {
@@ -60,11 +91,14 @@
         ? localPreviewConfig
         : await fetchAccessConfig();
       if (!Array.isArray(config.openLessons)) throw new Error('Invalid access list.');
-      const openLessons = new Set(config.openLessons.filter(Number.isInteger));
+      const openLessons = new Set(config.openLessons.filter((lesson) =>
+        Number.isInteger(lesson) && Object.hasOwn(config.lessonFiles || {}, String(lesson).padStart(2, '0')),
+      ));
       const currentLesson = lessonNumberFromUrl(window.location.pathname);
       if (currentLesson !== null && !openLessons.has(currentLesson)) {
         showUnavailable();
       } else {
+        if (currentLesson !== null) updateLessonNavigation(currentLesson, openLessons, config.lessonFiles);
         lockClosedLinks(openLessons);
       }
     } catch (error) {
