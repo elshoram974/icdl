@@ -21,6 +21,9 @@
       .idxcard.locked, a[data-lesson-locked="true"] { opacity: .58; cursor: not-allowed; }
       .idxcard.locked { background: #f1f3f7; }
       .idxcard.locked b { color: #657084; }
+      .mobile-nav[data-buttons="next"] { grid-template-columns: auto 1fr; }
+      .mobile-nav[data-buttons="previous"] { grid-template-columns: 1fr auto; }
+      .mobile-nav[data-buttons="none"] { grid-template-columns: 1fr; }
     `;
     document.head.append(style);
   }
@@ -69,19 +72,18 @@
       previousLink.href = lessonFiles[String(previousLesson).padStart(2, '0')];
       previousLink.textContent = 'الدرس السابق';
     } else {
-      previousLink.href = 'index.html';
-      previousLink.textContent = 'قائمة الدروس';
+      previousLink.remove();
     }
 
     if (nextLesson) {
       nextLink.href = lessonFiles[String(nextLesson).padStart(2, '0')];
       nextLink.textContent = 'الدرس التالي';
     } else {
-      nextLink.href = 'index.html';
-      nextLink.textContent = 'قائمة الدروس';
+      nextLink.remove();
     }
 
     if (position) position.textContent = `${currentIndex + 1} / ${lessons.length}`;
+    navigation.dataset.buttons = `${previousLesson ? 'previous' : ''}${previousLesson && nextLesson ? '-' : ''}${nextLesson ? 'next' : ''}` || 'none';
   }
 
   async function applyAccessRules() {
