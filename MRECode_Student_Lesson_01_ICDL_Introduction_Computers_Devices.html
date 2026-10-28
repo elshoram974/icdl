@@ -773,7 +773,38 @@
             }
         }
     </style>
-<script>document.documentElement.classList.add("access-checking");</script><style>html.access-checking body{visibility:hidden}</style><script src="access-control.js" defer></script></head>
+<script>document.documentElement.classList.add("access-checking");</script><style>html.access-checking body{visibility:hidden}</style><script src="access-control.js" defer></script><style id="course-content-style">
+.syllabus-coverage{scroll-margin-top:80px;overflow-wrap:anywhere}
+.syllabus-coverage h2{line-height:1.5;margin:0 0 20px}
+.syllabus-coverage h3{margin:30px 0 12px;padding-top:14px;border-top:1px solid #e1e6ef;color:#203b8e;line-height:1.6}
+.syllabus-coverage p,.syllabus-coverage li{line-height:1.95}
+.syllabus-coverage li{margin:9px 0}
+.syllabus-coverage ol,.syllabus-coverage ul{padding-inline-start:26px;padding-inline-end:8px}
+.syllabus-coverage code,.syllabus-coverage kbd{direction:ltr;unicode-bidi:isolate;display:inline-block;max-width:100%;white-space:normal;overflow-wrap:anywhere;background:#edf2fa;border:1px solid #dfe5ef;border-radius:5px;padding:2px 5px;font-family:ui-monospace,SFMono-Regular,monospace;font-size:.92em}
+.course-table{max-width:100%;overflow-x:auto;margin:18px 0;border:1px solid #dfe5ef;border-radius:10px}
+.syllabus-coverage table{border-collapse:collapse;width:100%;min-width:480px;margin:0;font-size:.95em}
+.syllabus-coverage caption{text-align:right;font-weight:700;padding:12px;background:#f8faff}
+.syllabus-coverage td,.syllabus-coverage th{padding:11px;border:1px solid #e1e6ef;vertical-align:top;text-align:right}
+.syllabus-coverage th{background:#edf2ff;color:#203b8e}
+.course-figure{margin:24px 0;background:#f8faff;border:1px solid #dfe5ef;border-radius:14px;overflow-x:auto}
+.course-figure img{display:block;width:100%;min-width:560px;height:auto;object-fit:contain}
+.course-figure figcaption{padding:12px 16px;font-size:.9em;color:#526078;min-width:0}
+.syllabus-coverage .complete-practice{padding:18px;background:#eff8f4;border:1px solid #b9decf;border-radius:12px;margin:24px 0}
+.syllabus-coverage .complete-practice h3{margin-top:0;border:0;padding-top:0;color:#176448}
+.syllabus-coverage blockquote{margin:16px 0;padding:16px;border-right:4px solid #5575bd;background:#f1f5ff}
+.mastery-check{background:#fff7e6;border-right:4px solid #b8871a;padding:14px}
+.course-sources{font-size:.9em;border-top:1px solid #dfe5ef;padding-top:14px}
+.course-sources a{color:#2855d9}
+.visual{grid-template-columns:1fr!important}
+.course-reader-note{background:#edf2ff;border-right:4px solid #2855d9;padding:14px;margin:18px 0;border-radius:8px}
+.teacher-action{border-right:4px solid #805ad5;background:#f7f3ff;padding:20px;border-radius:12px;margin:20px 0}
+.teacher-action h3{color:#493079;margin:16px 0 6px}
+.teacher-toc{display:flex;flex-wrap:wrap;gap:8px}
+.teacher-toc a{display:inline-block;padding:8px 12px;background:#edf2ff;border-radius:8px}
+@media(max-width:760px){.syllabus-coverage h3{font-size:20px}.syllabus-coverage .complete-practice{padding:12px}.course-reader-note{font-size:14px}}
+@media print{.syllabus-coverage,.teacher-action{break-inside:auto!important;box-shadow:none!important}.syllabus-coverage h2,.syllabus-coverage h3{break-after:avoid}.syllabus-coverage table{min-width:0;font-size:10pt}.course-table{overflow:visible}.course-figure{break-inside:avoid}.course-figure img{min-width:0;max-height:280px}.syllabus-coverage code{white-space:normal}.teacher-toc{display:none}}
+</style>
+</head>
 
 <body>
     <header class="top">
@@ -821,60 +852,34 @@
                 <div class="objective">تتعرف على أنواع الأجهزة وأهم مكوناتها واستخداماتها.</div>
             </div>
         </section>
-        <section class="card lesson-body">
-            <div class="section-title"><span class="n">01</span>
-                <div><small>المذكرة الأساسية</small>
-                    <h2>الشرح الكامل</h2>
-                </div>
-            </div>
-            <section class="topic">
-                <h3>ما هو ICDL؟</h3>
-                <p><b>ICDL</b> برنامج دولي لقياس وتطوير المهارات الرقمية. تاريخيًا اشتهر الاسم بمعنى <b>International
-                        Computer Driving Licence</b>، ومع إعادة تقديم العلامة عالميًا أصبح ICDL يُستخدم كاختصار لـ
-                    <b>International Certification of Digital Literacy</b>؛ أي «الشهادة الدولية للثقافة/المهارات
-                    الرقمية».</p>
-                <p>الفكرة الأساسية ليست حفظ أسماء أزرار، بل امتلاك مهارات تستطيع استخدامها في جهاز وبرنامج وموقف حقيقي.
-                    المحتوى الرسمي Vendor‑independent، لكننا في هذا الكورس نطبّق عمليًا باستخدام Windows وMicrosoft
-                    Office وأدوات الإنترنت الشائعة.</p>
-                <div class="note warning"><b>مهم:</b> كورس MRECode تدريبي مبني على مهارات ICDL الحديثة، لكنه <u>ليس
-                        شهادة ICDL رسمية</u> ولا نستعمل شعار ICDL كاعتماد.</div>
-            </section>
-            <section class="topic">
-                <h3>ICDL CORE الحديث</h3>
-                <p>طبقًا لأحدث بروشور <b>ICDL CORE 2026</b>، يشمل المسار سبع وحدات: <b>Computer & Online
-                        Essentials</b>، <b>Documents</b>، <b>Spreadsheets</b>، <b>Presentation</b>، <b>Teamwork</b>،
-                    <b>Cyber Security</b>، و<b>AI Essentials</b>. دُمجت مهارات Teamwork في الدرس الرابع.</p>
-                <p>الكورس موزع بحيث نتعلم كل وحدة عمليًا: أساسيات الكمبيوتر والإنترنت أولًا، ثم Word وExcel وPowerPoint،
-                    والعمل الجماعي، ثم الأمن السيبراني والذكاء الاصطناعي.</p>
-            </section>
-            <section class="topic">
-                <h3>كيف يعمل الكمبيوتر؟</h3>
-                <p>أي مهمة على الكمبيوتر يمكن تبسيطها إلى أربع مراحل:</p>
-                <div class="flow"><b>Input الإدخال</b><span>←</span><b>Processing المعالجة</b><span>←</span><b>Output
-                        الإخراج</b><span>←</span><b>Storage التخزين</b></div>
-                <p>مثال: تكتب من <b>Keyboard</b> → يعالج <b>CPU</b> البيانات → تظهر النتيجة على <b>Monitor</b> → تحفظها
-                    على <b>SSD</b>.</p>
-            </section>
-            <section class="topic">
-                <h3>Hardware وSoftware ونظام التشغيل</h3>
-                <p><b class="blue">Hardware</b> هو كل جزء مادي يمكن لمسه: الشاشة، لوحة المفاتيح، الماوس، الذاكرة، القرص،
-                    الطابعة. <b class="purple">Software</b> هو البرامج والتعليمات: Windows، Word، Chrome، التطبيقات.</p>
-                <p><b>Operating System (OS)</b> هو البرنامج الأساسي الذي يدير الجهاز والملفات والتطبيقات والذاكرة
-                    والأجهزة المتصلة. في تدريبنا سنستخدم Windows.</p>
-            </section>
-            <section class="topic">
-                <h3>مكونات مهمة لازم تعرفها</h3>
-                <ul>
-                    <li><b>CPU:</b> ينفذ التعليمات ويعالج العمليات.</li>
-                    <li><b>RAM:</b> ذاكرة مؤقتة سريعة للبرامج المفتوحة؛ تفقد محتواها عند إيقاف التشغيل.</li>
-                    <li><b>SSD/HDD:</b> تخزين دائم للملفات والبرامج.</li>
-                    <li><b>GPU:</b> معالجة الرسومات والفيديو.</li>
-                    <li><b>Ports:</b> مثل USB وHDMI وAudio لتوصيل أجهزة خارجية.</li>
-                    <li><b>Peripherals:</b> أجهزة طرفية مثل Printer وScanner وWebcam.</li>
-                </ul>
-            </section>
-        </section>
-        <section class="card complete-practice"><div class="section-title"><span class="n">↳</span><div><small>شرح عملي للمذاكرة في البيت</small><h2>نفّذ الدرس خطوة بخطوة</h2></div></div><p class="note"><b>الهدف: تعرف مواصفات الجهاز وتفرّق بين Hardware وSoftware</b></p><h3>نفّذ بنفسك</h3><ol><li>في Windows اضغط <code>Win + I</code> ثم <b>System → About</b>. في Mac اختر Apple menu ثم <b>About This Mac</b>.</li><li>اكتب في ملف نصي: اسم الجهاز، نوع المعالج CPU، RAM، وسعة التخزين. لا تكتب أي رقم تسلسلي أو معلومات حساسة.</li><li>افتح <b>Settings → System → Storage</b> وشاهد المساحة المستخدمة والمتاحة.</li><li>صنّف في جدول من عمودين: Hardware: شاشة، CPU، SSD، لوحة مفاتيح، ميكروفون. Software: Windows/macOS، Word، Chrome.</li><li>من Start اختر Power ثم Restart. بعد عودة الجهاز سجّل دخولك، ثم جرّب Sign out من قائمة الحساب إذا كان حسابًا شخصيًا وآمنًا.</li></ol><p class="note"><b>تأكد بنفسك:</b> تستطيع أن تقول لماذا RAM ليست تخزينًا دائمًا، وأن Word برنامج وليس Hardware.</p><p class="note warning"><b>حل مشكلة:</b> إن لم تجد About، ابحث داخل Settings عن كلمة <code>About</code> بدل التنقل يدويًا.</p></section>
+        <!-- COURSE-CONTENT-START -->
+<section class="card lesson-body syllabus-coverage" id="learn-01">
+<h2>الكمبيوتر والأجهزة: من الفكرة إلى الاستخدام</h2>
+<p>تبدأ من الصفر: تحتاج جهازًا يعمل بنظام Windows، وفأرة أو لوحة لمس، ومجلدًا تحفظ فيه تدريبك. اقرأ الشرح ثم نفّذ الخطوات على جهازك. أسماء الأوامر الإنجليزية بجانب معناها تساعدك لو اختلفت لغة الواجهة. هذا الدرس يغطي أساسيات الأجهزة؛ التدريب لا يتطلب فتح جسم الجهاز أو فك أي قطعة.</p>
+<h3>1. معنى المهارة الرقمية وICDL</h3>
+<p>المهارة الرقمية هي أن تنجز مهمة باستخدام جهاز وبرنامج مناسبين: تكتب خطابًا، تحفظه في مكان تعرفه، تبحث عن معلومة وتتحقق منها، وتشارك الملف بصلاحية صحيحة. ICDL يحدد مهارات يمكن تقييمها نظريًا وعمليًا، ولا يقتصر على برنامج بعينه. كورسنا يوزع وحدات CORE على 16 درسًا؛ وحدات الكمبيوتر والإنترنت، المستندات، الجداول، العروض، العمل الجماعي، الأمن والذكاء الاصطناعي موجودة في بروشور 2026. هذا تدريب على المهارات، والشهادة الرسمية لها اختبارها وإجراءاتها لدى ICDL.</p>
+<h3>2. كيف تتحول الكتابة إلى ملف؟</h3>
+<p>عندما تضغط حرفًا تدخل لوحة المفاتيح إشارة <b>Input</b>، وتعالج وحدة المعالجة <b>CPU</b> التعليمات، وتظهر النتيجة على الشاشة <b>Output</b>. أثناء العمل يحتفظ البرنامج بالبيانات في ذاكرة <b>RAM</b> المؤقتة، وعند الحفظ تُكتب على وحدة التخزين <b>Storage</b>. إغلاق الكهرباء قد يضيع التغييرات غير المحفوظة، لكنه لا يمحو الملفات المحفوظة عادة. لذلك لا تخلط بين حفظ ملف وإبقاء نافذته مفتوحة.</p>
+<figure class="course-figure"><img src="../assets/course/01.svg" alt="لوحة المفاتيح تدخل البيانات، المعالج والذاكرة يعالجانها، الشاشة تعرضها والتخزين يحتفظ بها"><figcaption>رسم تعليمي: مسار البيانات داخل الكمبيوتر.</figcaption></figure>
+<h3>3. العتاد والبرامج وأنواع الأجهزة</h3>
+<p><b>Hardware</b> هو الأجزاء المادية: الشاشة والمعالج والقرص. <b>Software</b> تعليمات تعمل على هذه الأجزاء. نظام التشغيل مثل Windows يدير الملفات والذاكرة والأجهزة والحسابات؛ التطبيق مثل Word ينفذ غرضًا للمستخدم. المتصفح تطبيق، أما محرك البحث فهو خدمة تستخدمها من المتصفح. التطبيق قد يعمل محليًا أو عبر الإنترنت؛ وجوده في المتصفح لا يعني أن بياناته محفوظة على جهازك.</p>
+<p>Desktop مناسب لمكان ثابت، وLaptop يجمع الشاشة ولوحة المفاتيح والبطارية للتنقل. Tablet وSmartphone يعتمدان غالبًا على اللمس. اختر حسب المهمة: كتابة تقرير طويل تحتاج لوحة مفاتيح مريحة؛ اجتماع يحتاج كاميرا وميكروفون واتصالًا مناسبًا. قوة الجهاز ليست رقمًا واحدًا: CPU يؤثر في الحسابات، RAM في القدرة على تشغيل أعمال متعددة، وسرعة SSD تؤثر في فتح البرامج والملفات. سعة التخزين تحدد ما تستطيع الاحتفاظ به، ولا تساوي سرعة المعالج.</p>
+<h3>4. أجهزة الإدخال والإخراج والمنافذ</h3>
+<div class="course-table" tabindex="0" role="region" aria-label="جدول بيانات الدرس"><table><caption>صنّف الجهاز بحسب وظيفة البيانات</caption><tr><th>وظيفته</th><th>أمثلة</th><th>مثال استخدام</th></tr><tr><td>إدخال</td><td>Keyboard، Mouse، Scanner، Camera، Microphone</td><td>إدخال نص أو صورة أو صوت</td></tr><tr><td>إخراج</td><td>Monitor، Printer، Speakers</td><td>عرض النتيجة أو طباعتها أو سماعها</td></tr><tr><td>إدخال وإخراج</td><td>Touchscreen، Headset بميكروفون</td><td>عرض ولمس، أو استماع وتسجيل</td></tr><tr><td>تخزين</td><td>SSD، HDD، USB flash</td><td>حفظ واسترجاع الملفات</td></tr></table></div>
+<p>USB يوصل ملحقات وتخزينًا؛ HDMI ينقل الصورة والصوت لشاشة؛ Ethernet يوصل شبكة سلكية؛ منفذ الصوت يوصل سماعة إذا كان الجهاز يدعمه. USB‑C يصف شكل موصل، لكن قدراته تختلف: ليس كل منفذ يدعم الفيديو أو الشحن نفسه. Docking station يجمع توصيلات عدة في نقطة واحدة. لا تدفع موصلًا بالقوة ولا توصل وحدة USB مجهولة.</p>
+<ol><li>لتوصيل فأرة USB: أدخل الموصل الموافق، انتظر تعرف Windows، ثم حرّك الفأرة واختبر النقر.</li><li>لتوصيل سماعة Bluetooth: شغّل وضع الاقتران في السماعة، ثم <b>Settings → Bluetooth &amp; devices → Add device → Bluetooth</b>، واختر اسمها. طابق رمز التأكيد إن ظهر.</li><li>إن اتصلت السماعة ولم يخرج صوت، افتح <b>Settings → System → Sound</b> واخترها في Output، وتحقق من مستوى الصوت.</li><li>قبل فصل تخزين خارجي أغلق الملفات المفتوحة عليه، ثم استخدم <b>Eject</b> أو Safely Remove إن توفر وانتظر رسالة السماح.</li></ol>
+<h3>5. التحكم الأساسي والنوافذ والحسابات</h3>
+<p>النقرة تحدد عنصرًا، والنقرتان تفتحان ملفًا في الإعداد الشائع، والنقر الأيمن يعرض أوامره. السحب ينقل عنصرًا أو يحدد نصًا حسب المكان. عجلة الفأرة تمرر الصفحة. في لوحة اللمس، تحريك إصبع يحرك المؤشر والتمرير بإصبعين يمرر غالبًا؛ يمكن تغيير ذلك في الإعدادات. Enter يؤكد، وEsc يلغي نافذة أو وضعًا، وTab ينتقل بين عناصر واجهة.</p>
+<p>زر Minimize يخفي النافذة في شريط المهام دون إغلاقها، وMaximize يوسعها، وClose يغلقها وقد يسأل عن حفظ التغييرات. Lock يقفل الشاشة ويترك العمل؛ Sign out يغلق جلسة المستخدم؛ Sleep يضع الجهاز في حالة توفير طاقة؛ Restart يعيد تشغيل النظام؛ Shut down ينهي التشغيل. احفظ عملك قبل تسجيل الخروج أو إعادة التشغيل. <kbd>Win+L</kbd> يقفل الشاشة عند ترك الجهاز.</p>
+<h3>6. صحة الاستخدام وإتاحة الوصول والبيئة</h3>
+<p>اجلس بحيث الظهر مدعوم والقدم مستقرة والرسغ غير ملتوي، وضع الشاشة بمسافة وارتفاع مريحين وخفف الانعكاس. خذ فواصل منتظمة من النظر والجلوس ولا ترفع الصوت لتغطية ضوضاء المكان. من <b>Settings → Accessibility</b> جرّب تكبير النص أو Magnifier أو Contrast themes أو Narrator حسب الحاجة. هذه أدوات وصول وليست علامات ضعف في المهارة. فعّل وقت إطفاء الشاشة من إعدادات الطاقة، واطبع عند الحاجة فقط، وسلّم الأجهزة القديمة لجهة تدوير مناسبة بعد معالجة بياناتها.</p>
+<section class="complete-practice"><h3>تطبيق محلول: تقرير جهازي</h3><ol><li>اضغط <kbd>Win+I</kbd> ثم <b>System → About</b>. اكتب اسم المعالج وحجم Installed RAM ونوع النظام. لا تحتاج نسخ رقم الجهاز أو مفاتيح المنتج.</li><li>افتح <b>System → Storage</b> وسجل سعة التخزين والمتاح. اكتب جملة: «RAM للعمل الجاري؛ التخزين لحفظ الملفات».</li><li>افتح Start وابحث عن Notepad، واكتب المواصفات وثلاثة أمثلة Hardware وثلاثة Software.</li><li>اختر <b>File → Save As</b>، افتح Documents، أنشئ مجلد <code>MRECode_Practice</code> ثم <code>L01</code>، واحفظ <code>My_Computer.txt</code>.</li><li>اضغط <kbd>Win+Shift+S</kbd>، حدد جزء المواصفات فقط، ثم افتح إشعار Snipping Tool واحفظ صورة باسم <code>Device.png</code> في المجلد.</li><li>أغلق Notepad وأعد فتح الملف من المجلد؛ ظهور النص يثبت الحفظ. ضغط المجلد للتسليم: انقر يمينًا عليه واختر <b>Compress to ZIP file</b> أو <b>Send to → Compressed folder</b>.</li></ol><p><b>الناتج المتوقع:</b> ZIP يحتوي النص والصورة، وفي النص مواصفات جهازك الحقيقية وتصنيف صحيح. مثال التصنيف: Windows وWord وNotepad برامج؛ Keyboard وSSD وCPU عتاد.</p></section>
+<h3>لو واجهتك مشكلة</h3><p>إذا الشاشة لا تعرض شيئًا، افحص الطاقة ومصدر الإدخال وتوصيل الشاشة قبل اتهام الكمبيوتر بالتلف. إذا لم يعمل ملحق، جرّب منفذًا آخر معروفًا وتحقق من الطاقة أو البطارية. إذا لم تجد About ابحث عنها في مربع البحث داخل Settings. لا تغير إعدادات عتاد متقدمة لمجرد تجربة؛ ابدأ بالملاحظة ووصف المشكلة.</p>
+<p class="mastery-check"><b>تأكد أنك أتقنت:</b> تصنف الأجهزة والبرامج، تشرح RAM والتخزين، تقرأ مواصفاتك، تحفظ ملفًا وتفتحه، وتختار Lock أو Restart أو Shut down بسبب واضح.</p>
+<p class="course-sources">مرجع الدرس: <a href="https://icdl.org/wp-content/uploads/ICDL-Computer-Online-Essentials-Syllabus-1.0.pdf">Computer &amp; Online Essentials 1.0</a>؛ <a href="https://icdl.org/wp-content/uploads/ICDL-CORE-PROF-Brochure-2026-1.pdf">بروشور ICDL 2026</a>.</p>
+</section>
+<!-- COURSE-CONTENT-END -->
+        
 <section class="card">
             <div class="section-title"><span class="n">02</span>
                 <div><small>خلاصة ثابتة للمراجعة في البيت</small>
@@ -891,13 +896,7 @@
                         <li>RAM مؤقتة • SSD/HDD تخزين دائم • CPU معالجة.</li>
                     </ul>
                 </div>
-                <figure class="figure"><img src="https://unsplash.com/photos/YgnyYmaIr88/download?force=true&amp;w=1400"
-                        alt="صورة توضيحية للدرس" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-                        onerror="this.parentElement.classList.add('failed')">
-                    <div class="imgfallback">تعذر تحميل الصورة من الإنترنت. الشرح والخلاصة داخل الملف متاحان للمراجعة.</div>
-                    <figcaption>Brandon Cormier / Unsplash — <a href="https://unsplash.com/photos/YgnyYmaIr88"
-                            target="_blank" rel="noopener">مصدر الصورة</a></figcaption>
-                </figure>
+                
             </div>
         </section>
         <section class="two">
@@ -925,7 +924,7 @@
                 <ol class="steps">
                     <li>أنشئ مجلدًا باسم StudentName_Lesson01.</li>
                     <li>اكتب ملف نصي أو Word بسيط فيه: نوع الجهاز، نظام التشغيل، CPU، RAM، مساحة التخزين.</li>
-                    <li>أضف جدولًا فيه 5 أمثلة Hardware و5 أمثلة Software.</li>
+                    <li>أضف قائمتين نصيتين فيهما 5 أمثلة Hardware و5 أمثلة Software؛ لا تحتاج جدول Word قبل دراسته.</li>
                     <li>أرفق Screenshot من صفحة System &gt; About مع إخفاء أي بيانات شخصية لا تريد مشاركتها.</li>
                 </ol>
                 <div class="deliver"><b>التسليم:</b> مجلد واحد مضغوط ZIP باسم StudentName_L01.zip</div>
@@ -1087,8 +1086,11 @@
                 Official</a><a href="https://icdl.org/our-story-celebrating-30-years/" target="_blank"
                 rel="noopener">ICDL Story — Official</a><a
                 href="https://icdl.org/digital-student/computer-online-essentials/" target="_blank"
-                rel="noopener">Computer &amp; Online Essentials — Official</a>
+                rel="noopener">Computer &amp; Online Essentials — Official</a><a
+                href="https://icdl.org/wp-content/uploads/ICDL-CORE-PROF-Brochure-2026-1.pdf" target="_blank"
+                rel="noopener">ICDL CORE &amp; Professional Brochure 2026</a>
         </section>
+        
     </main>
     <footer class="footer">
         <div class="footerin">
