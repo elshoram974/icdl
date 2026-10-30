@@ -1,7 +1,7 @@
 {
   "course": "Computer Skills & Microsoft Office — MRECode",
   "updatedAt": "2026-10-20",
-  "openLessons": [],
+  "openLessons": [1],
   "lessonFiles": {
     "01": "MRECode_Student_Lesson_01_ICDL_Introduction_Computers_Devices.html",
     "02": "MRECode_Student_Lesson_02_Windows_Applications_Files_Storage.html",
